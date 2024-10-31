@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer de Estudo e Descanso</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="claro">
+    <header class="d-flex justify-content-end align-items-center">
+        <button id="modeButton" class="border-0 bg-transparent px-3 m-4">
+            <img id="modeImage" src="src/imagem/lua.png" alt="Modo Claro" style="width: 40px;">
+        </button>
+    </header>
+    <main class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div class="container border p-5">
+            <h1 class="text-center">Timer de Produtividade</h1>
+            <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <label for="studyTimeHours">Tempo de Estudo</label>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control col-3 mx-1" id="studyTimeHours" placeholder="HH" min="0" max="24">
+                    <input type="number" class="form-control col-3 mx-1" id="studyTimeMinutes" placeholder="MM" min="0" max="60">
+                    <input type="number" class="form-control col-3 mx-1" id="studyTimeSeconds" placeholder="SS" min="0" max="60">
+                </div>
+            </div>
+            <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <label for="breakTimeHours">Tempo de Descanso</label>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <input type="number" class="form-control col-3 mx-1" id="breakTimeHours" placeholder="HH" min="0" max="24">
+                    <input type="number" class="form-control col-3 mx-1" id="breakTimeMinutes" placeholder="MM" min="0" max="60">
+                    <input type="number" class="form-control col-3 mx-1" id="breakTimeSeconds" placeholder="SS" min="0" max="60">
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around">
+                <button id="startButton" class="btn btn-block col-4 m-0 container">
+                    <i class="fas fa-play"></i> 
+                </button>
+                <button id="pauseButton" class="btn btn-block col-4 m-0 container">
+                    <i class="fas fa-pause"></i> 
+                </button>
+            </div>
+          
+            
+            <h3 class="text-center mt-3" id="timerDisplay">00:00:00</h3>
+            <h4 class="text-center" id="statusDisplay">Pronto para começar!</h4>
+        </div>
+    </main>
+    <audio id="endSound" src="src/alarme.mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.noturno{
+   background-image: url(../imagem/noite.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+    color: aliceblue;
+}
+
+.claro{
+    background-image: url(../imagem/dia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #1a1a1a;
+}
+
+.border{
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#modeButton:focus{
+    outline: none;
+}
+#startButton{
+    background-color: #164310;
+    color: #FFFFFF;
+}
+
+#pauseButton{
+    background-color: #c90b03;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:768px) {
+    .border{
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+    }
+    .text-center{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
+
